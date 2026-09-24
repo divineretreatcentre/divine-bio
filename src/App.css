@@ -121,6 +121,10 @@
   color: var(--color-facebook);
 }
 
+.link-card__icon--donate {
+  color: #d64545;
+}
+
 .link-card__text {
   display: flex;
   flex-direction: column;

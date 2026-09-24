@@ -8,6 +8,7 @@ import {
   FacebookIcon,
   InstagramIcon,
   YoutubeIcon,
+  DonateIcon,
   MailIcon,
 } from './components/Icons'
 import { socialLinks, contact, type LinkItem } from './data/links'
@@ -19,6 +20,7 @@ const iconMap: Record<LinkItem['icon'], ReactNode> = {
   facebook: <FacebookIcon />,
   instagram: <InstagramIcon />,
   youtube: <YoutubeIcon />,
+  donate: <DonateIcon />,
 }
 
 const iconClassMap: Record<LinkItem['icon'], string> = {
@@ -27,6 +29,7 @@ const iconClassMap: Record<LinkItem['icon'], string> = {
   facebook: 'link-card__icon--facebook',
   instagram: 'link-card__icon--instagram',
   youtube: 'link-card__icon--youtube',
+  donate: 'link-card__icon--donate',
 }
 
 function App() {

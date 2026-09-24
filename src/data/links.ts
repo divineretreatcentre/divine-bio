@@ -3,7 +3,7 @@ export type LinkItem = {
   label: string
   description: string
   href: string
-  icon: 'website' | 'whatsapp' | 'facebook' | 'instagram' | 'youtube'
+  icon: 'website' | 'whatsapp' | 'facebook' | 'instagram' | 'youtube' | 'donate'
 }
 
 export const socialLinks: LinkItem[] = [
@@ -41,6 +41,13 @@ export const socialLinks: LinkItem[] = [
     description: 'Divine Goodness TV',
     href: 'https://www.youtube.com/@DivineGoodnessTV',
     icon: 'youtube',
+  },
+  {
+    id: 'donate',
+    label: 'Donate',
+    description: 'Support the ministry',
+    href: 'https://drcm.org/donation/',
+    icon: 'donate',
   },
 ]
 
