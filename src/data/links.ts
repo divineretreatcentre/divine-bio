@@ -15,13 +15,6 @@ export const socialLinks: LinkItem[] = [
     icon: 'whatsapp',
   },
   {
-    id: 'facebook',
-    label: 'Facebook',
-    description: '@divineyouth',
-    href: 'https://www.facebook.com/divineyouth',
-    icon: 'facebook',
-  },
-  {
     id: 'instagram',
     label: 'Instagram',
     description: '@divineretreatcentre',
@@ -29,18 +22,25 @@ export const socialLinks: LinkItem[] = [
     icon: 'instagram',
   },
   {
-    id: 'website',
-    label: 'Website',
-    description: 'drcm.org',
-    href: 'https://drcm.org',
-    icon: 'website',
-  },
-  {
     id: 'youtube',
     label: 'Subscribe on YouTube',
     description: 'Divine Goodness TV',
     href: 'https://www.youtube.com/@DivineGoodnessTV',
     icon: 'youtube',
+  },
+  {
+    id: 'facebook',
+    label: 'Facebook',
+    description: '@divineyouth',
+    href: 'https://www.facebook.com/divineyouth',
+    icon: 'facebook',
+  },
+  {
+    id: 'website',
+    label: 'Website',
+    description: 'drcm.org',
+    href: 'https://drcm.org',
+    icon: 'website',
   },
   {
     id: 'donate',

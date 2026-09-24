@@ -10,6 +10,7 @@ import {
   YoutubeIcon,
   DonateIcon,
   MailIcon,
+  ChevronIcon,
 } from './components/Icons'
 import { socialLinks, contact, type LinkItem } from './data/links'
 import './App.css'
@@ -76,6 +77,9 @@ function App() {
                 <span className="contact__label">Email us</span>
                 <span className="contact__value">{contact.email}</span>
               </span>
+              <span className="contact__chevron" aria-hidden="true">
+                <ChevronIcon />
+              </span>
             </a>
 
             <a
@@ -90,6 +94,9 @@ function App() {
               <span className="contact__text">
                 <span className="contact__label">WhatsApp</span>
                 <span className="contact__value">{contact.whatsappDisplay}</span>
+              </span>
+              <span className="contact__chevron" aria-hidden="true">
+                <ChevronIcon />
               </span>
             </a>
           </section>

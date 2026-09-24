@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { ChevronIcon } from './Icons'
 
 type LinkCardProps = {
   href: string
@@ -17,9 +18,7 @@ export function LinkCard({ href, label, description, icon, iconClassName }: Link
         <span className="link-card__description">{description}</span>
       </span>
       <span className="link-card__chevron" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="m9 6 6 6-6 6" />
-        </svg>
+        <ChevronIcon />
       </span>
     </a>
   )
