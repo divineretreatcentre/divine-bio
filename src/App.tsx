@@ -13,6 +13,7 @@ import {
   ChevronIcon,
 } from './components/Icons'
 import { socialLinks, contact, type LinkItem } from './data/links'
+import { trackLinkClick } from './lib/analytics'
 import './App.css'
 
 const iconMap: Record<LinkItem['icon'], ReactNode> = {
@@ -57,6 +58,7 @@ function App() {
             {socialLinks.map((link) => (
               <LinkCard
                 key={link.id}
+                id={link.id}
                 href={link.href}
                 label={link.label}
                 description={link.description}
@@ -69,7 +71,11 @@ function App() {
           <section className="contact" aria-label="Contact Divine Retreat Centre">
             <h2 className="contact__heading">Prayer Requests &amp; Assistance</h2>
 
-            <a className="contact__row" href={`mailto:${contact.email}`}>
+            <a
+              className="contact__row"
+              href={`mailto:${contact.email}`}
+              onClick={() => trackLinkClick('email', 'Email us', `mailto:${contact.email}`)}
+            >
               <span className="contact__icon contact__icon--mail">
                 <MailIcon />
               </span>
@@ -87,6 +93,7 @@ function App() {
               href={contact.whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackLinkClick('whatsapp-contact', 'WhatsApp', contact.whatsappHref)}
             >
               <span className="contact__icon contact__icon--whatsapp">
                 <WhatsAppIcon />
